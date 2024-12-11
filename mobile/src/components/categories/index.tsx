@@ -17,7 +17,11 @@ export function Categories({ data, selected, onSelect }: Props) {
     <FlatList
       data={data}
       horizontal
-      contentContainerClassName="gap-4 absolute z-10 top-8 px-4 mx-h-6"
+      style={{ maxHeight: 46, position: "absolute", zIndex: 1, top: 28 }}
+      contentContainerStyle={{
+        gap: 8,
+        paddingHorizontal: 24,
+      }}
       showsHorizontalScrollIndicator={false}
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
