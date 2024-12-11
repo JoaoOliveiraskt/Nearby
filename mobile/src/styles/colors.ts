@@ -1,22 +1,14 @@
 export const colors = {
-  gray: {
-    100: "#FCFDFE",
-    200: "#E1EBF4",
-    300: "#C4D0DB",
-    400: "#73808C",
-    500: "#45525F",
-    600: "#1A1F24",
-  },
-
-  green: {
-    soft: "#E9F3EF",
-    light: "#3B9B62",
-    base: "#257F49",
-    dark: "#052914",
-  },
-
-  red: {
-    light: "#FDEDED",
-    base: "#F94144",
+  dark: {
+    background: "#0D0D0D",
+    accent: "#1a1a1a",
+    primary: "#257F49",
+    primaryLight: "#39A153",
+    primaryForeground: "#F5F5F5",
+    card: "#1F1F1F",
+    text: "#F5F5F5",
+    muted: "#B3B3B3",
+    destructive: "#F94144",
+    destructiveForeground: "#FDEDED",
   },
 };

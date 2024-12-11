@@ -1,6 +1,8 @@
 import "../styles/global.css";
 import { Stack } from "expo-router";
 import { colors } from "@/styles/theme";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { Loading } from "@/components/loading";
 import {
   useFonts,
   Inter_400Regular,
@@ -10,7 +12,6 @@ import {
   Inter_800ExtraBold,
   Inter_900Black,
 } from "@expo-google-fonts/inter";
-import { Loading } from "@/components/loading";
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -27,11 +28,13 @@ export default function Layout() {
   }
 
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-        contentStyle: { backgroundColor: colors.gray[600] },
-      }}
-    />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: colors.dark.background },
+        }}
+      />
+    </GestureHandlerRootView>
   );
 }

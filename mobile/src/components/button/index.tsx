@@ -47,7 +47,7 @@ function Icon({ className, icon: Icon }: IconProps) {
   return (
     <Icon
       className={`text-text text-center ${className}`}
-      color={colors.gray[100]}
+      color={colors.dark.text}
       size={18}
     />
   );
