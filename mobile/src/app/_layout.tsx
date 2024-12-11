@@ -12,6 +12,7 @@ import {
   Inter_800ExtraBold,
   Inter_900Black,
 } from "@expo-google-fonts/inter";
+import { StatusBar } from "react-native";
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -29,6 +30,10 @@ export default function Layout() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
+      <StatusBar
+        backgroundColor={colors.dark.background}
+        barStyle={"light-content"}
+      />
       <Stack
         screenOptions={{
           headerShown: false,

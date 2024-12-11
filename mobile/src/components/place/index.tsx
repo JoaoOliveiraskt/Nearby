@@ -29,13 +29,13 @@ export function Place({ data, ...rest }: Props) {
     >
       <Image
         source={{ uri: data.cover }}
-        className="w-32 h-32 bg-accent rounded-xl"
+        className="w-28 h-28 bg-accent rounded-xl"
       />
 
       <View className="flex-1">
         <View className="gap-1">
           <Text className="text-base font-bold text-text">{data.name}</Text>
-          <Text className="text-sm font-normal text-muted">
+          <Text className="text-sm font-normal text-muted" numberOfLines={2}>
             {data.description}
           </Text>
         </View>

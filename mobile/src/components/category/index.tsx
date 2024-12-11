@@ -22,7 +22,9 @@ export function Category({
     <Pressable
       className={`h-12 px-4 flex flex-row items-center justify-center gap-2 rounded-full border 
         ${
-          isSelected ? "bg-primary border-primaryLight" : "bg-card border-card"
+          isSelected
+            ? "bg-primary border-primaryLight"
+            : "bg-card border-border"
         } 
         ${className}`}
       {...rest}

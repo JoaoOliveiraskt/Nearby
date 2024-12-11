@@ -20,6 +20,7 @@ module.exports = {
         muted: colors.dark.muted,
         destructive: colors.dark.destructive,
         destructiveForeground: colors.dark.destructiveForeground,
+        border: colors.dark.border,
       },
     },
   },
