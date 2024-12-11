@@ -23,8 +23,8 @@ const stepsContent = [
 
 export function Steps() {
   return (
-    <View>
-      <Text className="mb-6 text-muted">Veja como funciona:</Text>
+    <View style={{ flex: 1 }}>
+      <Text className="mb-6 text-muted font-regular">Veja como funciona:</Text>
       {stepsContent.map((step, index) => (
         <Step
           key={index}
