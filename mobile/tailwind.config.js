@@ -18,6 +18,7 @@ module.exports = {
         card: colors.dark.card,
         text: colors.dark.text,
         muted: colors.dark.muted,
+        mutedForeground: colors.dark.mutedForeground,
         destructive: colors.dark.destructive,
         destructiveForeground: colors.dark.destructiveForeground,
         border: colors.dark.border,

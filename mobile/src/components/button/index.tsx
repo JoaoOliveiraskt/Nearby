@@ -23,7 +23,7 @@ function Button({
     <TouchableOpacity
       disabled={isLoading}
       {...rest}
-      className={`w-full h-14 max-h-14 bg-primary rounded-xl gap-4 flex flex-row  items-center justify-center ${className}`}
+      className={`w-full h-16 max-h-16 bg-primary rounded-xl gap-4 flex flex-row  items-center justify-center ${className}`}
     >
       {isLoading ? <ActivityIndicator color="white" /> : children}
     </TouchableOpacity>
@@ -41,14 +41,15 @@ function Title({ children, className }: TextProps) {
 type IconProps = {
   icon: React.ComponentType<TablerIconProps>;
   className?: string;
+  size?: number;
 };
 
-function Icon({ className, icon: Icon }: IconProps) {
+function Icon({ className, icon: Icon, size = 18 }: IconProps) {
   return (
     <Icon
       className={`text-text text-center ${className}`}
       color={colors.dark.text}
-      size={18}
+      size={size}
     />
   );
 }

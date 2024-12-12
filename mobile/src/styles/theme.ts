@@ -1,4 +1,4 @@
-import { colors } from "./colors";
+import { colors, mapCustomDarkStyle } from "./colors";
 import { fontFamily } from "./font-family";
 
-export { colors, fontFamily };
+export { colors, fontFamily, mapCustomDarkStyle };
